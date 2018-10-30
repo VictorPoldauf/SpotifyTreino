@@ -1,12 +1,175 @@
 body{
     margin: 0px;
 }
+.menu{
+    background-color: rgba(0,0,0, 0.6);
+    padding: 0; 
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+    padding: 12px 0;
+    width: 100%
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navLinks ul li{
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+    font-size: 12pt;
+    font-family: 'Lato', sans-serif;
+}
+
+.navLinks{
+    padding-right: 100px;
+}
+
+.query{
+    display: none;
+}
+
+.navLinks ul{
+    margin: 0;
+}
+
+.navLinks a:hover{
+    color: #1ED760;
+
+}   
+
+.iconeSpotify{
+    display: flex;
+    color: white;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.iconeSpotify h2{
+    padding-left: 5px;
+    margin: 0;
+    padding-top: 12.5px;
+    font-size: 20pt;
+}
+
+.linkdecima{
+    font-weight: bold;
+    color: white;
+}
+
+.linksCinza{
+    color: gray;
+    font-weight: bold;
+}
+
+.cinzaHref{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.brancoHref{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.iconenav{
+    width: 42.5px;
+    height: 42.5px;
+    position: relative;
+    top: 8px;
+    left: 3px;
+}
+
+.fundo-de-tela{
+    height: 750px;
+    background-image: linear-gradient(to bottom, #F47A77, #F58E69);
+    z-index: -1;
+}
+.imagem {
+    height: 750px;
+}
+.imagem > img{
+    width: 50%;
+    height: 1500px;
+    margin-top: -400px;
+}
+#main{
+    margin: 0;
+    height: 0;
+}
+.textodomeio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 500px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.textoprincipal h1 {
+    font-size: 60pt;
+}
+.textoprincipal h1, h4 {
+    margin: 0;
+    padding: 2px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.textoprincipal h5 {
+    font-size: 13pt;
+    margin: 15px;
+}
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+}
+.botaofree {
+    position: relative;
+    bottom: 475px;
+    background-color: #1ED760;
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    height: 50px;
+    border: none;
+    border-radius: 500px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
 footer{
     background-color: black;
     color: #FFFF;
     display: flex;
     justify-content: space-between;
     padding: 2.5%;
+    height: 65vh;
 }
 .itensFooter ul{
     list-style: none;
@@ -65,9 +228,32 @@ footer{
         color: #8f9395;
         flex-wrap: nowrap;
     }
+
+    .listas{
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    .query{
+        display: block;
+    }
+
+    .query span{
+        background: white;
+    }
 }
 @media screen and (max-width:650px){
     .listas{
         flex-wrap: wrap;
+        display: none;
     }
+
+    .query{
+        display: block;
+    }
+
+    .query span{
+        background: white;
+    }
+
 }
